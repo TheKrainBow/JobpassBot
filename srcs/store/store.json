@@ -1,0 +1,57 @@
+{
+  "Gitlab": {
+    "APIKey": "glpat-nKuVi1t9xS3cipG5tvdi",
+    "ProjectID": 50603454
+  },
+  "Discord": {
+    "APIKey": "MTE1NDQ2Mzk5MDQwODI4MjIzMg.Gpwk0g.p-sJ-W5L8DKgKzbFhhfjmW43vkr6ICnsWiBThU",
+    "ApplicationID": "1154463990408282232",
+    "GuildID": "1154463490669555772",
+    "LogChannelID": "1155115201411170304",
+    "Prefix": "!"
+  },
+  "Users": [
+    {
+      "ID": "1",
+      "GitlabID": 11665329,
+      "GitlabUsername": "TheKrainBow",
+      "DiscordID": "178234024811167744",
+      "DiscordUsername": ".krain."
+    },
+    {
+      "ID": "2",
+      "GitlabID": 8880044,
+      "GitlabUsername": "Teyber",
+      "DiscordID": "445028733414408203",
+      "DiscordUsername": "teyber"
+    }
+  ],
+  "CommandInitialized": true,
+  "Commands": [
+    {
+      "ID": "1155510868122030211",
+      "Name": "register-gitlab",
+      "Description": "Link your discord account to your gitlab account"
+    },
+    {
+      "ID": "1155510870034620597",
+      "Name": "unlink-gitlab",
+      "Description": "Unlink your gitlab account from discord account"
+    },
+    {
+      "ID": "1155510871490048021",
+      "Name": "list-gitlab-users",
+      "Description": "List all gitlab users related to project"
+    },
+    {
+      "ID": "1155510873037742100",
+      "Name": "delete-discord-commands",
+      "Description": "Remove all discord Jobpass commands from Discord Server"
+    },
+    {
+      "ID": "1155510874262491176",
+      "Name": "refresh-discord-commands",
+      "Description": "Refresh all discord Jobpass commands from Discord Server"
+    }
+  ]
+}
