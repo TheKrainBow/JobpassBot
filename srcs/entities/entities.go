@@ -2,10 +2,12 @@ package entities
 
 import "sync"
 
-var StorePath = "./srcs/store/store.json"
-var DataMutext sync.Mutex
-var Data *Store
-var GitlabProjectMember []GitlabUser
+var (
+	StorePath           = "./srcs/store/store.json"
+	DataMutext          sync.Mutex
+	Data                *Store
+	GitlabProjectMember []GitlabUser
+)
 
 type GitlabAccessLevel int
 

@@ -2,14 +2,14 @@ package usecase
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
+
 	"github.com/bwmarrin/discordgo"
 	log "github.com/sirupsen/logrus"
 	"go-jobpass-bot/srcs/entities"
-	"strconv"
-
 	"go-jobpass-bot/srcs/store"
 	"go-jobpass-bot/srcs/tools"
-	"strings"
 )
 
 type Command struct {

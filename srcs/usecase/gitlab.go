@@ -1,11 +1,12 @@
 package usecase
 
 import (
+	"strings"
+
 	log "github.com/sirupsen/logrus"
 	"github.com/xanzy/go-gitlab"
 	"go-jobpass-bot/srcs/dto"
 	"go-jobpass-bot/srcs/entities"
-	"strings"
 )
 
 func FetchGitlabProjectMembers() error {

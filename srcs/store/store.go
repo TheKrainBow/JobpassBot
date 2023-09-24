@@ -2,10 +2,11 @@ package store
 
 import (
 	"encoding/json"
+	"os"
+
 	log "github.com/sirupsen/logrus"
 	"go-jobpass-bot/srcs/entities"
 	"go-jobpass-bot/srcs/tools"
-	"os"
 )
 
 func InitStore() error {
@@ -33,7 +34,7 @@ func SaveStoreInfo() error {
 		return err
 	}
 
-	err = os.WriteFile(entities.StorePath, data, 0644)
+	err = os.WriteFile(entities.StorePath, data, 0o644)
 	if err != nil {
 		return err
 	}

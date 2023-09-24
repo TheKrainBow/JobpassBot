@@ -1,9 +1,6 @@
 package main
 
 import (
-	"go-jobpass-bot/srcs/entities"
-	"go-jobpass-bot/srcs/store"
-	"go-jobpass-bot/srcs/usecase"
 	"os"
 	"os/signal"
 	"syscall"
@@ -11,6 +8,9 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 	log "github.com/sirupsen/logrus"
+	"go-jobpass-bot/srcs/entities"
+	"go-jobpass-bot/srcs/store"
+	"go-jobpass-bot/srcs/usecase"
 )
 
 func AutoSave() {
@@ -101,5 +101,4 @@ func main() {
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt)
 	<-sc
-
 }
